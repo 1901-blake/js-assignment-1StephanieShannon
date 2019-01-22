@@ -3,11 +3,15 @@ Define function spliceElement(someArr, index)
 Splice the element at the provided index in the array.
 */
 
-let someArr = [1,2,3,4,5];
+
+//This assumes we cannot use .splice to solve this problem.
+let someArr = [1,2,3,4,5,6,7,8,9];
 
 function spliceElement(someArr, index) {
-    //do a for loop to take out the index in an array
-
+    let value = index + 1;
+    return someArr.filter(function(index) {
+        return value !== index;                //returns all array members that do not equal provided index
+    });   
 }
-
-// don't use this .splice
+let newArray = spliceElement(someArr, 7);
+console.log(newArray);
