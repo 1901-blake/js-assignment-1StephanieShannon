@@ -8,7 +8,6 @@ function substring(someStr, startIndex, endIndex) {
 
 }
 */
-
 let someStr = 'Stephanie';
 let mySubStr = someStr.substring(0,5);
 
